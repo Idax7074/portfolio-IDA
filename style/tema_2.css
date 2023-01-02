@@ -1,0 +1,21 @@
+h1 {
+  margin-bottom: 80px;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*Carousel*/
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 5rem;
+  top: 25%;
+  transform: translateY(-50%);
+  color: var(--secondary);
+  cursor: pointer;
+}
