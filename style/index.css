@@ -150,6 +150,62 @@ h1 {
   animation-delay: 0s;
 }
 
+/*Carousel*/
+.carousel {
+  width: auto;
+  height: 600px;
+  position: relative;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
+
+.slide[data-active] {
+  opacity: 1;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  color: black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+
 .grid_1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;

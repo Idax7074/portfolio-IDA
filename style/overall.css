@@ -61,10 +61,10 @@ header {
 }
 
 .logo img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   position: absolute;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .dropdownmenu {
@@ -93,7 +93,7 @@ header {
   font-family: parity-sans, sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   padding: 15px 25px;
   margin-inline: 70px;
@@ -140,62 +140,6 @@ li:hover ul#submenu {
 }
 
 /*Burger menu*/
-
-/*Carousel*/
-.carousel {
-  width: auto;
-  height: 600px;
-  position: relative;
-}
-
-.carousel > ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.slide {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-}
-
-.slide img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 4px;
-}
-
-.slide[data-active] {
-  opacity: 1;
-}
-
-.carousel-button {
-  position: absolute;
-  z-index: 2;
-  background: none;
-  border: none;
-  font-size: 5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--secondary);
-  cursor: pointer;
-}
-
-.carousel-button:hover {
-  color: black;
-}
-
-.carousel-button.prev {
-  left: 1rem;
-}
-
-.carousel-button.next {
-  right: 1rem;
-}
 
 /*Footer*/
 .footer {
