@@ -12,18 +12,20 @@
     <title>Portfolio eksamen</title>
   </head>
   <body>
-    <header>
+    <header class="banner">
       <a href="index.html" class="logo"><img src="SVG/Artboard 9.svg" alt="Logo" /></a>
       <nav class="dropdownmenu main-menu">
-        <button class="toggle-btn">
-          <div></div>
-          <div></div>
-          <div></div>
+        <button class="toggle-btn" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </button>
         <ul>
           <li><a href="index.html">Forside</a></li>
           <li>
-            <a href="#">Temaer</a>
+            <div class="temaer">
+              <a href="#">Temaer</a>
+            </div>
             <ul id="submenu">
               <li><a href="tema_2.html">Tema 2</a></li>
               <li><a href="tema_3.html">Tema 3</a></li>
@@ -57,38 +59,56 @@
         </div>
       </div>
       <section>
-        <div class="carousel" data-carousel>
-          <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
-          <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
-          <ul data-slides>
-            <li class="slide" data-active>
-              <img src="img/noface.webp" alt="no face drawing" />
-            </li>
-            <li class="slide">
-              <img src="img/web.webp" alt="no face drawing" />
-            </li>
-            <li class="slide">
-              <img src="img/UX.webp" alt="no face drawing" />
-            </li>
-            <li class="slide">
-              <img src="img/animation.webp" alt="no face drawing" />
-            </li>
-            <li class="slide">
-              <img src="img/indhold.webp" alt="no face drawing" />
-            </li>
-            <li class="slide">
-              <img src="img/portfolio.webp" alt="no face drawing" />
-            </li>
-          </ul>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="img/noface.webp" alt="No face painting" />
+            <div class="text"><a href="index.html"></a></div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/web.webp" alt="Web painting" />
+            <div class="text"><a href="tema_2.html"></a></div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/UX.webp" alt="UX painting" />
+            <div class="text"><a href="tema_3.html"></a></div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/animation.webp" alt="Animation painting" />
+            <div class="text"><a href="tema_4.html"></a></div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/indhold.webp" alt="Indhold painting" />
+            <div class="text"><a href="tema_5.html"></a></div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/portfolio.webp" alt="Portfolio painting" />
+            <div class="text"><a href="tema_6.html"></a></div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/noface.webp" alt="No face painting" />
+            <div class="text"><a href="om_mig.html"></a></div>
+          </div>
+
+          <a href="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a href="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-      </section>
-      <section class="grid_1">
-        <a href="index.html"><img src="img/noface.webp" alt="" /></a>
-        <a href="tema_2.html"><img src="img/web.webp" alt="" /></a>
-        <a href="tema_3.html"><img src="img/UX.webp" alt="" /></a>
-        <a href="tema_4.html"><img src="img/animation.webp" alt="" /></a>
-        <a href="tema_5.html"><img src="img/indhold.webp" alt="" /></a>
-        <a href="tema_6.html"><img src="img/portfolio.webp" alt="" /></a>
+        <br />
+
+        <div class="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -115,5 +135,6 @@
         <p>Tlf: +45 27143609</p>
       </div>
     </footer>
+    <script src="javascript/burger.js"></script>
   </body>
 </html>

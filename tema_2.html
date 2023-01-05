@@ -11,13 +11,20 @@
     <title>Portfolio eksamen</title>
   </head>
   <body>
-    <header>
+    <header class="banner">
       <a href="index.html" class="logo"><img src="SVG/Artboard 9.svg" alt="Logo" /></a>
-      <nav class="dropdownmenu">
+      <nav class="dropdownmenu main-menu">
+        <button class="toggle-btn" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
         <ul>
           <li><a href="index.html">Forside</a></li>
           <li>
-            <a href="#">Temaer</a>
+            <div class="temaer">
+              <a href="#">Temaer</a>
+            </div>
             <ul id="submenu">
               <li><a href="tema_2.html">Tema 2</a></li>
               <li><a href="tema_3.html">Tema 3</a></li>
@@ -106,5 +113,6 @@
         <p>Tlf: +45 27143609</p>
       </div>
     </footer>
+    <script src="javascript/burger.js"></script>
   </body>
 </html>
