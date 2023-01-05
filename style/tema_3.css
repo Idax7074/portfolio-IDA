@@ -16,26 +16,12 @@ h2 {
   margin-top: 10px;
 }
 
-.order h2 {
-  text-align: end;
-}
-
-.order p {
-  text-align: end;
-}
-
 p {
   margin-bottom: 20px;
 }
 
 img {
   border-radius: 5px;
-}
-
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
 }
 
 .button {
@@ -61,4 +47,43 @@ img {
   color: var(--septenary);
   border: 1px solid var(--septenary);
   padding: 15px 40px;
+}
+
+@media (min-width: 600px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .order h2 {
+    text-align: end;
+  }
+
+  .order p {
+    text-align: end;
+  }
+
+  .pic2 {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    margin-inline: 10px;
+  }
+
+  section {
+    padding: 25px;
+    border-radius: 5px;
+  }
+
+  .pic1 {
+    display: none;
+  }
+
+  .button {
+    margin-bottom: 80px;
+  }
 }
