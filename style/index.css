@@ -9,7 +9,7 @@ h1 {
   top: 25%;
   left: 0;
   width: 100%;
-  height: 1040px;
+  height: 950px;
   overflow: hidden;
   z-index: -1;
 }
@@ -153,6 +153,7 @@ h1 {
 /*Scroll image*/
 .image_gallery {
   position: relative;
+  padding-bottom: 40px;
 }
 
 div.scrollimage {
@@ -162,33 +163,88 @@ div.scrollimage {
 
 div.scrollimage a {
   display: inline-block;
+  color: var(--secondary);
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-block: 10px;
+}
+
+.forside {
+  background-color: #f9d0cf;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.web {
+  background-color: #b4d3d3;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.ux {
+  background-color: #afd6be;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.animation {
+  background-color: #f9d0cf;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.indhold {
+  background-color: #b4d3d3;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.portfolio {
+  background-color: #afd6be;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.mig {
+  background-color: #f9d0cf;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 div.scrollimage img {
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
-.dots {
+.arrows {
   position: absolute;
-  bottom: 10px;
+  bottom: 2px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  margin-inline: 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.fa-mouse {
+  font-size: 1.5rem;
+  margin-left: 50px;
 }
 
-.dot:hover {
-  background-color: #717171;
+.fa-angle-double-right {
+  margin-left: 50px;
+  font-size: 1.5rem;
+}
+
+.fa-angle-double-right:hover {
+  color: var(--tertiary);
+}
+
+.fa-angle-double-left {
+  font-size: 1.5rem;
+}
+
+.fa-angle-double-left:hover {
+  color: var(--tertiary);
 }
 
 @media (max-width: 600px) {
@@ -196,9 +252,135 @@ div.scrollimage img {
     margin-inline: 5px;
   }
 
-  .dot {
-    height: 12px;
-    width: 12px;
-    margin-inline: 2px;
+  .circles {
+    height: 520px;
+  }
+
+  @keyframes float {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-400px);
+    }
+  }
+
+  .circles div:nth-child(1) {
+    left: 9%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+  }
+
+  .circles div:nth-child(2) {
+    left: 0.5%;
+    width: 20px;
+    height: 20px;
+    background: var(--septenary);
+    animation-delay: 4s;
+    animation-duration: 20s;
+  }
+
+  .circles div:nth-child(3) {
+    left: 85%;
+    width: 50px;
+    height: 50px;
+    background: var(--senary);
+    animation-delay: 2s;
+  }
+
+  .circles div:nth-child(4) {
+    left: 22%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+    animation-duration: 30s;
+  }
+
+  .circles div:nth-child(5) {
+    left: 45%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 6s;
+  }
+
+  .circles div:nth-child(6) {
+    left: 29%;
+    width: 40px;
+    height: 40px;
+    background: var(--senary);
+    animation-delay: 2s;
+  }
+
+  .circles div:nth-child(7) {
+    left: 65%;
+    width: 30px;
+    height: 30px;
+    background: var(--septenary);
+    animation-duration: 20s;
+  }
+
+  .circles div:nth-child(8) {
+    left: 78%;
+    width: 20px;
+    height: 20px;
+    background: var(--quinary);
+    animation-delay: 6s;
+  }
+
+  .circles div:nth-child(9) {
+    display: none;
+    left: 95%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 10s;
+  }
+
+  .circles div:nth-child(10) {
+    display: none;
+    left: 88%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+    animation-duration: 25s;
+  }
+
+  .circles div:nth-child(11) {
+    display: none;
+    left: 34%;
+    width: 40px;
+    height: 40px;
+    background: var(--septenary);
+    animation-delay: 10s;
+    animation-duration: 24s;
+  }
+
+  .circles div:nth-child(12) {
+    display: none;
+    left: 90%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 15s;
+    animation-duration: 30s;
+  }
+
+  .circles div:nth-child(13) {
+    display: none;
+    left: 20%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 10s;
+    animation-duration: 20s;
+  }
+
+  .circles div:nth-child(14) {
+    display: none;
+    left: 55%;
+    width: 15px;
+    height: 15px;
+    background: var(--senary);
+    animation-delay: 10s;
   }
 }

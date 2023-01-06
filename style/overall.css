@@ -331,7 +331,7 @@ form button {
     margin-top: 150px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 
     padding: 0px;
     padding-block: 100px;
@@ -339,14 +339,14 @@ form button {
 
   .col_1 {
     padding-inline: 40px;
-  }
-
-  .col_2 h3 {
-    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-top: 30px;
   }
 
   .col_3 {
     padding-inline: 40px;
+    margin-bottom: 30px;
+    margin-top: 50px;
   }
 
   form input {
