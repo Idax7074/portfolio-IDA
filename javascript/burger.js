@@ -23,6 +23,8 @@ function toggleMenu() {
 // Tilføj et klik-event til "btn", der sætter toggleMenu-funktionen i gang
 btn.addEventListener("click", toggleMenu);
 
+//Funktionen myFunction (som vi klikker på i HTML'en)
+//Funktionen siger at når vi klikker på knappen vil klassen change blive sat på eller fjernet
 function myFunction(x) {
   x.classList.toggle("change");
 }
