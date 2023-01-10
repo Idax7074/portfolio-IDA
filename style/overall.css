@@ -326,6 +326,15 @@ form button {
   font-size: 1rem;
 }
 
+.footer_social {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+.footer_social i {
+  color: var(--tertiary);
+}
+
 @media (max-width: 600px) {
   .footer {
     margin-top: 150px;

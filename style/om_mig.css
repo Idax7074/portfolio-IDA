@@ -139,7 +139,7 @@ section {
   margin-bottom: 2px;
 }
 
-.kvickly li {
+.kvickly {
   font-size: 0.9rem;
   margin-block: 10px;
 }
@@ -192,10 +192,6 @@ section {
 
   .job li {
     margin-left: 80px;
-  }
-
-  .kvickly li {
-    margin-left: 95px;
   }
 
   .mine_interesser li {

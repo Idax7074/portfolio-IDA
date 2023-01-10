@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="style/overall.css" />
     <link rel="stylesheet" href="style/tema_4.css" />
     <link rel="stylesheet" href="https://use.typekit.net/xyi7vyp.css" />
@@ -45,21 +46,30 @@
           <h2>04.04.01 Temaopgave</h2>
           <p>
             I opgave 04.04.01 temaopgave skulle vi designe og programmere et interaktivt og animeret spil. Vi skulle lave vores egne figurer og baggrunde i illustrator og gemme dem som svg filer. I vores spil skulle man kunne klikke på ting, som
-            enten faldt ned eller dukkede op. Der skulle både være gode og dårlige ting at klikke på, hvor man enten fik point eller mistede og mistede liv. Derudover skulle der vises tid, så brugeren viste hvor lang tid der var tilbage. Vi skulle
-            lave to slutninger en ”level complete” og en ”game over”.
+            enten faldt ned eller dukkede op. <br />
+            Der skulle både være gode og dårlige ting at klikke på, hvor man enten fik point eller mistede og mistede liv. Derudover skulle der vises tid, så brugeren viste hvor lang tid der var tilbage. Vi skulle lave to slutninger en ”level
+            complete” og en ”game over”.
           </p>
           <h2>Processen</h2>
+          <p>Mit spil er ”Guldbar”, som handler om Benedikte der er til fredagscafe og skal have drukket nok inden hun skal i byen.</p>
           <p>
-            Til denne opgave lærte vi om sproget Javascript, CSS animationer, aktivitetsdiagram og state machine diagram. Vi lærte om forskellige karakterdesign som line of action, hvor elementerne har mere dynamik og attitude. Ved at bruge former og
-            linjer kan man understrege et elements personlighed. Vi lavede aktivitetsdiagram og state machine diagram, som er en forståelig model af vores spil.
+            Til denne opgave lærte vi om sproget JavaScript, CSS-animationer, aktivitetsdiagram og state machine diagram. <br />
+            Vi lærte om forskellige karakterdesigns, som line of action, hvor elementerne har mere dynamik og attitude. Ved at bruge former og linjer kan man understrege et elements personlighed. Min stilart for spillets baggrunde og spil figurer er
+            flat design 2.
           </p>
-
           <p>
-            Med CSS animationer kan man bestemmer animationens navn, hvor lang tid og hvor mange gange animationen skal forløbe. Vi lærte om keyframes, som er hvordan animation går fra en tilstand til en anden. Vi skulle opbygge vores spil via
-            container og sprite princippet, ved at et spilelement i form af svg fil indsættes som baggrund på en sprite div, som placeres inden i en container div. På den måde ville vi både kunne animere container og sprite hver for sig.
+            Vi lavede aktivitetsdiagram og state machine diagram, som er en forståelig model af spillet. State machine diagrammet er mere detaljeret end aktivitetsdiagrammet, i state machine diagrammet skriver du også de forskellige animationer der
+            sker, når brugeren klikker på elementerne ind i modellen.
           </p>
-
-          <p>I Javascript lærte vi om document.querySelector, funktioner, addClass/removeClass, variabler, events, betingelser og math.random. Så vi kunne klikke på vores elementer, få elementer til at placere sig forskellige, tælle point og liv.</p>
+          <p>
+            Med CSS-animationer bestemmer man animationens navn, hvor lang tid og hvor mange gange animationen skal forløbe. Vi lærte om keyframes, som er hvordan animation går fra en tilstand til en anden. <br />
+            Vi skulle opbygge vores spil via container og sprite princippet, ved at et spilelement i form af svg fil indsættes som baggrund på en sprite div, som placeres inde i en container div. På den måde ville vi både kunne sætte css animationer
+            på container og sprite.
+          </p>
+          <p>
+            I JavaScript lærte vi om document.querySelector, funktioner, addClass/removeClass, variabler, events, betingelser og math.random. Dette betød at vi kunne få vores spil til at virke optimalt, så man kunne klikke på figurelementerne, få dem
+            til at placere sig forskelligt, samt tælle point og liv.
+          </p>
         </div>
         <div class="pic">
           <img src="img/guldbar.webp" alt="Guldbar spillet animation" />
@@ -89,8 +99,12 @@
       </div>
       <div class="col_3">
         <h3>Kontakt</h3>
-        <p>Email: idax327t@stud.kea.dk</p>
-        <p>Tlf: +45 27143609</p>
+        <div class="footer_social">
+          <i class="fa-solid fa-envelope"></i>
+          <p>idax327t@stud.kea.dk</p>
+          <i class="fa-solid fa-phone"></i>
+          <p>+45 27 14 36 09</p>
+        </div>
       </div>
     </footer>
     <script src="javascript/burger.js"></script>
