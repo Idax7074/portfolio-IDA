@@ -253,7 +253,7 @@ div.scrollimage img {
   }
 
   .circles {
-    height: 520px;
+    height: 685px;
   }
 
   @keyframes float {
@@ -382,5 +382,13 @@ div.scrollimage img {
     height: 15px;
     background: var(--senary);
     animation-delay: 10s;
+  }
+
+  .image_gallery img {
+    height: 200px;
+  }
+
+  .image_gallery p {
+    font-size: 1.1rem;
   }
 }

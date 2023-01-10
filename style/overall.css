@@ -186,6 +186,10 @@ header {
     display: block;
   }
 
+  .toggle-btn span {
+    display: block;
+  }
+
   .main-menu.shown {
     display: contents;
   }
