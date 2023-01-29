@@ -60,7 +60,7 @@ header {
   margin-bottom: 50px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 812px) {
   .logo img {
     width: 100px;
     height: 100px;
@@ -140,6 +140,13 @@ header {
   }
 }
 
+@media (max-width: 915px) and (min-width: 812px) {
+  .dropdownmenu a {
+    padding: 15px 15px;
+    margin-inline: 40px;
+  }
+}
+
 /*Burger menu*/
 
 .toggle-btn {
@@ -151,7 +158,21 @@ header {
   min-height: 44px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 812px) and (min-width: 595px) {
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 595px) {
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 812px) {
   .banner {
     background: var(--primary);
     padding: 2rem;
@@ -163,11 +184,6 @@ header {
     gap: 20px 40px;
   }
 
-  .logo img {
-    width: 70px;
-    height: 70px;
-  }
-
   .main-menu.shown a {
     font-family: parity-sans, sans-serif;
     font-weight: 500;
@@ -176,10 +192,6 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     line-height: 1.5rem;
-  }
-
-  .main-menu.shown a:hover {
-    color: var(--primary);
   }
 
   .toggle-btn {
@@ -339,17 +351,53 @@ form button {
   color: var(--tertiary);
 }
 
-@media (max-width: 600px) {
+@media (min-width: 1030px) and (max-width: 1300px) {
   .footer {
-    margin-top: 150px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    padding: 100px 5%;
+  }
+}
 
-    padding: 0px;
-    padding-block: 100px;
+@media (min-width: 930px) and (max-width: 1030px) {
+  .footer {
+    padding: 100px 2%;
+  }
+}
+
+@media (min-width: 810px) and (max-width: 930px) {
+  .footer {
+    padding: 100px 0%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 810px) {
+  .col_1 {
+    padding-inline: 115px;
+    margin-bottom: 50px;
+    margin-top: 30px;
   }
 
+  .col_3 {
+    padding-inline: 115px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 665px) {
+  .col_1 {
+    padding-inline: 90px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+
+  .col_3 {
+    padding-inline: 90px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
   .col_1 {
     padding-inline: 40px;
     margin-bottom: 50px;
@@ -360,6 +408,18 @@ form button {
     padding-inline: 40px;
     margin-bottom: 30px;
     margin-top: 50px;
+  }
+}
+
+@media (max-width: 810px) {
+  .footer {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    padding: 0px;
+    padding-block: 100px;
   }
 
   form input {

@@ -9,9 +9,39 @@ h1 {
   top: 25%;
   left: 0;
   width: 100%;
-  height: 950px;
+  height: 1025px;
   overflow: hidden;
   z-index: -1;
+}
+
+@media (max-width: 940px) and (min-width: 880px) {
+  .circles {
+    height: 1000px;
+  }
+}
+
+@media (max-width: 880px) and (min-width: 780px) {
+  .circles {
+    height: 955px;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 600px) {
+  .circles {
+    height: 895px;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 450px) {
+  .circles {
+    height: 710px;
+  }
+}
+
+@media (max-width: 450px) {
+  .circles {
+    height: 600px;
+  }
 }
 
 @keyframes float {
@@ -252,10 +282,6 @@ div.scrollimage img {
     margin-inline: 5px;
   }
 
-  .circles {
-    height: 685px;
-  }
-
   @keyframes float {
     0% {
       opacity: 1;
@@ -384,11 +410,7 @@ div.scrollimage img {
     animation-delay: 10s;
   }
 
-  .image_gallery img {
-    height: 200px;
-  }
-
   .image_gallery p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }

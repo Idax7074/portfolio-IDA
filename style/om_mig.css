@@ -157,7 +157,7 @@ section {
   margin-bottom: 20px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 812px) {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -199,11 +199,7 @@ section {
   }
 }
 
-@media (max-width: 600px) {
-  main {
-    margin-inline: 10px;
-  }
-
+@media (max-width: 812px) {
   .pic {
     margin-top: 30px;
   }
@@ -230,5 +226,76 @@ section {
 
   .kvickly li {
     font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1105px) {
+  main {
+    margin-inline: 10px;
+  }
+}
+
+@media (max-width: 1105px) and (min-width: 1090px) {
+  .pic {
+    height: 527px;
+  }
+}
+
+@media (max-width: 1090px) and (min-width: 1060px) {
+  .pic {
+    height: 520px;
+  }
+}
+
+@media (max-width: 1060px) and (min-width: 1030px) {
+  .pic {
+    height: 505px;
+  }
+}
+
+@media (max-width: 1030px) and (min-width: 997px) {
+  .pic {
+    height: 488px;
+  }
+}
+
+@media (max-width: 997px) and (min-width: 967px) {
+  .pic {
+    height: 474px;
+  }
+}
+
+@media (max-width: 967px) and (min-width: 945px) {
+  .pic {
+    height: 459px;
+  }
+}
+
+@media (max-width: 945px) and (min-width: 922px) {
+  .pic {
+    height: 448px;
+  }
+}
+@media (max-width: 922px) and (min-width: 893px) {
+  .pic {
+    height: 437px;
+  }
+}
+
+@media (max-width: 893px) and (min-width: 865px) {
+  .pic {
+    height: 422px;
+  }
+}
+
+@media (max-width: 865px) and (min-width: 835px) {
+  .pic {
+    height: 408px;
+  }
+}
+
+@media (max-width: 835px) and (min-width: 812px) {
+  .pic {
+    height: 392px;
   }
 }
